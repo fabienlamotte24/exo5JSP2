@@ -6,19 +6,15 @@
   </head>
   <body>
     <div class="container">
-      <img src="image1.jpg" id="image1" onmouseover="mouseOver('image1', 'image1_2.jpg');"/>
-      <img src="image2.jpg" id="image2" onmouseover="mouseOver('image2', 'image2_2.jpg');"/>
-      <img src="image3.jpg" id="image3" onmouseover="mouseOver('image3', 'image3_2.jpg');"/>
-      <img src="image4.jpg" id="image4" onmouseover="mouseOver('image4', 'image4_2.jpg');"/>
-      <img src="image5.jpg" id="image5" onmouseover="mouseOver('image5', 'image5_2.jpg');"/>
+      <img src="assets/img/image1.jpg" id="image1" onmouseover="mouseover(id)" alt="couverture de livre" />
+      <img src="assets/img/image2.jpg" id="image2" onmouseover="mouseover(id)" alt="couverture de livre" />
+      <img src="assets/img/image3.jpg" id="image3" onmouseover="mouseover(id)" alt="couverture de livre" />
+      <img src="assets/img/image4.jpg" id="image4" onmouseover="mouseover(id)" alt="couverture de livre" />
+      <img src="assets/img/image5.jpg" id="image5" onmouseover="mouseover(id)" alt="couverture de livre" />
     </div>
     <script>
-    function mouseOver(id, image){
-      document.getElementById(id).src=image;
-      document.getElementById(id).src=image;
-      document.getElementById(id).src=image;
-      document.getElementById(id).src=image;
-      document.getElementById(id).src=image;
+    function mouseover(id){
+      document.getElementById(id).src = 'assets/img/s' + id + '_2.jpg';
     }
     </script>
   </body>
